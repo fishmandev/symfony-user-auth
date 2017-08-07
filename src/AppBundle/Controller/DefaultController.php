@@ -18,4 +18,13 @@ class DefaultController extends Controller
             'base_dir' => realpath($this->getParameter('kernel.project_dir')).DIRECTORY_SEPARATOR,
         ]);
     }
+
+    /**
+     * @Route("/admin", name="admin_area")
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
+    public function adminAction()
+    {
+        return $this->render('default/admin.html.twig');
+    }
 }
