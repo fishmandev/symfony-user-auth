@@ -26,4 +26,12 @@ class SecurityController extends Controller
             'error'         => $error,
         ));
     }
+
+    /**
+     * @Route("/admin/logout", name="logout")
+     */
+    public function logoutAction()
+    {
+        // Does not need to be implemented
+    }
 }
